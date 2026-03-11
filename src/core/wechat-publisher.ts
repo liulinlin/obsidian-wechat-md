@@ -189,14 +189,17 @@ export async function publish(
   const articleTitle = fm.title || title
   const author = fm.author || settings.wxDefaultAuthor || ''
   const digest = fm.digest || ''
+  const need_open_comment =  1
 
   // 6. 创建草稿
+  // 文档地址：https://developers.weixin.qq.com/doc/subscription/api/draftbox/draftmanage/api_draft_add.html#%E8%AF%B7%E6%B1%82%E4%BD%93-Request-Payload
   const mediaId = await wxAddDraft(wxProxyUrl, token, {
     title: articleTitle,
     content,
     thumb_media_id: thumbMediaId,
     author,
     digest,
+    need_open_comment,
   })
 
   return { mediaId }

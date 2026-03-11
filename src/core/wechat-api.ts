@@ -156,6 +156,7 @@ export interface DraftArticle {
   author?: string
   digest?: string
   content_source_url?: string
+  need_open_comment?: number
 }
 
 export async function wxAddDraft(
@@ -174,6 +175,7 @@ export async function wxAddDraft(
         ...(article.author && { author: article.author }),
         ...(article.digest && { digest: article.digest }),
         ...(article.content_source_url && { content_source_url: article.content_source_url }),
+        ...(article.need_open_comment !== undefined && { need_open_comment: article.need_open_comment }),
       }],
     }),
   })
