@@ -1,11 +1,11 @@
 {
-  "id": "wechat-publisher",
-  "name": "WeChat Publisher",
-  "version": "1.0.0",
-  "minAppVersion": "1.4.0",
-  "description": "将 Markdown 文档转换为微信公众号排版格式，支持自定义主题、数学公式、代码高亮等功能。",
-  "author": "绝影",
-  "authorUrl": "https://github.com/liulinlin/obsidian-wechat-md",
-  "fundingUrl": "https://github.com/liulinlin/obsidian-wechat-md#donate",
-  "isDesktopOnly": false
+	"id": "wechat-publisher",
+	"name": "WeChat Publisher",
+	"version": "1.0.1-beta.0",
+	"minAppVersion": "1.4.0",
+	"description": "将 Markdown 文档转换为微信公众号排版格式，支持自定义主题、数学公式、代码高亮等功能。",
+	"author": "绝影",
+	"authorUrl": "https://github.com/liulinlin/obsidian-wechat-md",
+	"fundingUrl": "https://github.com/liulinlin/obsidian-wechat-md#donate",
+	"isDesktopOnly": false
 }
