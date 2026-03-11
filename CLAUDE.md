@@ -389,7 +389,7 @@ wxAddDraft()：创建草稿（标题从 Frontmatter 或文件名）
 
 ```bash
 # 1. 安装依赖
-npm install
+pnpm install
 
 # 2. 配置 Obsidian 测试仓库路径（两种方式）
 
@@ -402,7 +402,7 @@ set OBSIDIAN_VAULT_PATH=C:\path\to\vault        # Windows
 ### 5.2 开发模式
 
 ```bash
-npm run dev
+pnpm run dev
 # 效果：
 # - esbuild 监听 src/ 目录变更
 # - 构建完成后自动部署到 <vault>/.obsidian/plugins/wechat-publisher/
@@ -416,7 +416,7 @@ npm run dev
 ### 5.3 构建生产版本
 
 ```bash
-npm run build
+pnpm run build
 # 输出到 dist/：main.js、manifest.json、styles.css
 ```
 
