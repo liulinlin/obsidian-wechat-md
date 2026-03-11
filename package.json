@@ -1,0 +1,32 @@
+{
+  "name": "obsidian-wechat-md",
+  "version": "1.0.0",
+  "description": "Obsidian plugin for converting Markdown to WeChat format",
+  "main": "main.js",
+  "scripts": {
+    "dev": "cross-env OBSIDIAN_VAULT_PATH=/Users/liulinlin/obsidian_仓库/AI杂货铺 node esbuild.config.mjs",
+    "windev": "cross-env OBSIDIAN_VAULT_PATH=F:/my_obsidian/AI杂货铺 node esbuild.config.mjs",
+    "build": "tsc -noEmit && node esbuild.config.mjs production"
+  },
+  "dependencies": {
+    "es-toolkit": "^1.44.0",
+    "fflate": "^0.8.2",
+    "front-matter": "^4.0.2",
+    "highlight.js": "^11.11.1",
+    "isomorphic-dompurify": "^2.35.0",
+    "juice": "^11.0.3",
+    "marked": "^17.0.1",
+    "postcss": "^8.5.6",
+    "postcss-calc": "^10.1.1",
+    "postcss-custom-properties": "^15.0.0",
+    "reading-time": "^1.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.4.0",
+    "builtin-modules": "^4.0.0",
+    "cross-env": "^7.0.3",
+    "esbuild": "^0.23.1",
+    "obsidian": "latest",
+    "typescript": "^5.9.0"
+  }
+}
