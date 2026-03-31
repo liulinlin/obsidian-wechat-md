@@ -188,7 +188,7 @@ export async function publish(
   // 5. 组装文章
   const articleTitle = fm.title || title
   const author = fm.author || settings.wxDefaultAuthor || ''
-  const digest = fm.digest || ''
+  const digest = fm.summary || fm.digest || ''
   const need_open_comment =  1
 
   // 6. 创建草稿
